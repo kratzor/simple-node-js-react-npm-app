@@ -13,7 +13,7 @@ steps {pipeline {
             }
         stage('Build') { 
             steps {
-                sh '/jenkins/scripts/test.sh' 
+                sh './jenkins/scripts/test.sh' 
             }
             
         }
