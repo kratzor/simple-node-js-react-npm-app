@@ -11,11 +11,12 @@ steps {pipeline {
             steps {
                 sh 'npm install' 
             }
+            }
         stage('Build') { 
             steps {
                 sh './jenkins/scripts/test.sh' 
             }
-        }
+        
         }
     }
 }
